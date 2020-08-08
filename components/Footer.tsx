@@ -37,7 +37,7 @@ type Props = {
   footerText: String
 }
 
-const Footer = ({footerText}: Props) => (
+const Footer:React.FC<Props> = ({footerText}: Props) => (
   <FooterStyled>
       <NavStyled>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sonchau/sargon-react-context">Repos</a></li>

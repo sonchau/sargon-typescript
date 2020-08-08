@@ -13,7 +13,7 @@ type Props = {
   headerText: String
 }
 
-const Header = ({ headerText }: Props) => (
+const Header:React.FC<Props> = ({ headerText }: Props) => (
   <HeaderStyled>
     <p>{headerText}</p>
   </HeaderStyled>
