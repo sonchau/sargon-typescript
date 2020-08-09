@@ -1,6 +1,13 @@
 import React, {useState} from 'react'
 import styled from "styled-components"
 import {fetchPhotos} from '../api/flickr'
+import {
+  useSetRecoilState,
+  atom
+} from 'recoil';
+
+import {photoListState} from '../recoil/state';
+
 const SearchFormStyled = styled.div`
     flex: 0 0 40%;
     display: flex;
@@ -59,10 +66,11 @@ const SearchButton = styled.button`
 
 const SearchForm:React.FC = () => {
   const [tags, setTags] = useState('')
+  const setPhotoList = useSetRecoilState(photoListState);
   const onTagsChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     setTags(e.target.value)
     const data = await fetchPhotos(e.target.value)
-    console.log('data', data)
+    setPhotoList(data);
 }
   return (
     <>

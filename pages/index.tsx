@@ -7,8 +7,8 @@ import { Photo } from '../interfaces'
 const IndexPage = () => {
   return (
     <Layout title="Sargon Coding Challenge - Typescript">
-    <Main />
-  </Layout>
+      <Main />
+    </Layout>
   )
 }
 
