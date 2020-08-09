@@ -43,7 +43,7 @@ const Footer:React.FC<Props> = ({footerText}: Props) => (
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/sonchau/sargon-react-context">Repos</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sonnchau/">Linkedin</a></li>
       </NavStyled>
-      <p className="copyright">&copy; {footerText}.</p>
+      <p>&copy; {footerText}.</p>
   </FooterStyled>
 )
 export default Footer

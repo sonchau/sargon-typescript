@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from "styled-components"
-
+import {fetchPhotos} from '../api/flickr'
 const SearchFormStyled = styled.div`
     flex: 0 0 40%;
     display: flex;
@@ -59,8 +59,10 @@ const SearchButton = styled.button`
 
 const SearchForm:React.FC = () => {
   const [tags, setTags] = useState('')
-  const onTagsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onTagsChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     setTags(e.target.value)
+    const data = await fetchPhotos(e.target.value)
+    console.log('data', data)
 }
   return (
     <>
@@ -69,7 +71,6 @@ const SearchForm:React.FC = () => {
       <SearchInputStyled
           type="text"
           placeholder="Tags"
-          className="text-input"
           value={tags}
           onChange={onTagsChange}
       />
