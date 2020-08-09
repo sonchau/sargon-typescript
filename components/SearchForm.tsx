@@ -83,7 +83,7 @@ const SearchForm:React.FC = () => {
           onChange={onTagsChange}
       />
       <SearchButton>
-          <SearchIcon src={process.env.PUBLIC_URL + '/search.png'} />
+          <SearchIcon src="/search.png" alt="search" />
       </SearchButton>
   </SearchFormStyled>
   </>
