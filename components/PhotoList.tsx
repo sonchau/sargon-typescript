@@ -1,5 +1,4 @@
 import * as React from 'react'
-import ListItem from './ListItem'
 import { Photo } from '../interfaces'
 import styled from "styled-components"
 import {useRecoilValue} from 'recoil'
@@ -13,9 +12,6 @@ const PhotoListStyled = styled.ul`
   list-style: none;
 `;
 
-type Props = {
-  items: Photo[]
-}
 
 const PhotoList:React.FC = () => {
   const photoList = useRecoilValue(photoListState);

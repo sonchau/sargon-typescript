@@ -2,8 +2,7 @@ import React, {useState} from 'react'
 import styled from "styled-components"
 import {fetchPhotos} from '../api/flickr'
 import {
-  useSetRecoilState,
-  atom
+  useSetRecoilState
 } from 'recoil';
 
 import {photoListState} from '../recoil/state';

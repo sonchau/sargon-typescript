@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import Layout from '../components/Layout'
 import Main from '../components/Main'
-import { Photo } from '../interfaces'
 
 const IndexPage = () => {
   return (

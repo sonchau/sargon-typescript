@@ -5,6 +5,7 @@ export const FLICKR_API: String =
   'https://api.flickr.com/services/feeds/photos_public.gne?format=json&tagmode=any';
 
 
+  
 export const fetchPhotos = async (tags: string) => {
   try {
     const endpoint = `${FLICKR_API}&tags=${tags}`;

@@ -10,3 +10,7 @@ export interface Photo {
   author_id: string
   tags: string
 }
+
+export interface PhotoList {
+  photoList: Photo[]
+}
