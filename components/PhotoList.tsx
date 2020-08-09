@@ -1,9 +1,10 @@
 import * as React from 'react'
 import ListItem from './ListItem'
-import { User, Photo } from '../interfaces'
+import { Photo } from '../interfaces'
 import styled from "styled-components"
 import {useRecoilValue} from 'recoil'
-import {photoListState} from '../recoil/state';
+import {photoListState} from '../recoil/state'
+import PhotoListItem from './PhotoListItem'
 
 const PhotoListStyled = styled.ul`
   display: grid;
@@ -16,14 +17,14 @@ type Props = {
   items: Photo[]
 }
 
-const PhotoList = ({ items }: Props) => {
+const PhotoList:React.FC = () => {
   const photoList = useRecoilValue(photoListState);
-  console.log('photoList state', photoList)
-  return (<ul>
-    
-    </ul>)
+  //console.log('photoList state', photoList)
+  return (<PhotoListStyled>
+          {photoList.map((item: Photo, index: number) => {
+            return <PhotoListItem key={index} photo={item}/>
+          })}
+    </PhotoListStyled>)
 }
-  
-
 
 export default PhotoList
