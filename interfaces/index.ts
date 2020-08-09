@@ -1,8 +1,12 @@
 
+
+type Media = {
+  m: string
+}
 export interface Photo {
   title: string
   link: string
-  media: object
+  media: Media
   date_taken: string
   description: string
   published: string
@@ -14,3 +18,4 @@ export interface Photo {
 export interface PhotoList {
   photoList: Photo[]
 }
+
