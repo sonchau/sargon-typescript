@@ -8,7 +8,7 @@
   - link the thumbnail to the hi-res image so the user can view that too
 
 # Solution 2 technology
-  - NextJS(https://nextjs.org/)
+  - [NextJS](https://nextjs.org/)
   - Typescript for type checking
   - Recoil to maintain global state
   - sometimes user type so fast in the text input, use debounce to send request every 500ms to improve performance 
@@ -17,7 +17,7 @@
   - resonsive design with css grid layout
   - serverless deployment to [Vercel](https://sargon-typescript.sonchau.vercel.app/)
 
-### Installation
+## Installation
 
 The code requires [Node.js](https://nodejs.org/) v10+ to run.
 
@@ -29,6 +29,15 @@ $ cd sargon-typescript
 $ npm install
 $ npm run dev
 ```
+
+## Production URL
+
+You can view the coding challenge by visiting one of the following vercel links
+
+[sargon-typescript-git-master.sonchau.vercel.app](sargon-typescript-git-master.sonchau.vercel.app)
+[sargon-typescript.sonchau.vercel.app](sargon-typescript.sonchau.vercel.app)
+[sargon-typescript.vercel.app](sargon-typescript.vercel.app)
+
 ### Todos
  - Write unit using Jest and React Testing Library
  - Write functional test using Cypress
