@@ -34,9 +34,9 @@ $ npm run dev
 
 You can view the coding challenge by visiting one of the following vercel links
 
-  - [sargon-typescript-git-master.sonchau.vercel.app](sargon-typescript-git-master.sonchau.vercel.app)
-  - [sargon-typescript.sonchau.vercel.app](sargon-typescript.sonchau.vercel.app)
-  - [sargon-typescript.vercel.app](sargon-typescript.vercel.app)
+  - [sargon-typescript-git-master.sonchau.vercel.app](https://sargon-typescript-git-master.sonchau.vercel.app)
+  - [sargon-typescript.sonchau.vercel.app](https://sargon-typescript.sonchau.vercel.app)
+  - [sargon-typescript.vercel.app](https://sargon-typescript.vercel.app)
 
 ### Todos
  - Write unit using Jest and React Testing Library
